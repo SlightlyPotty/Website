@@ -1,0 +1,51 @@
+body {
+  background-color: rgb(255, 247, 166);
+  font-family: sans-serif;
+  margin: 0px;
+  text-align: center;
+  max-width:100%;
+  overflow-x: hidden;
+}
+
+#central {
+  margin: 0 auto;
+  width: 80%;
+  min-width: 80%;
+  background-color: green;
+  padding: 0px 200px 0px 200px;
+}
+
+
+#top {
+
+  font-size: 32px;
+  height: 30%;
+  max-height: 200px;
+  min-width: 400px;
+  background-color: white;
+}
+
+#logo {
+  float: left;
+  height: 100%;
+  width: 200px;
+  background-color: red;
+}
+
+#footer{
+  color: white;
+  background-color: black;
+  min-height: 100px;
+}
+
+#blog{
+  min-height: 800px;
+  background-color: salmon;
+  padding-top: 20px;
+}
+
+.v_a {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 20px;
+}
