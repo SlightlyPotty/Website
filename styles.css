@@ -1,51 +1,151 @@
+@font-face {
+  font-family: handwritten;
+  src: url(res/Lavi.ttf);
+}
+
 body {
-  background-color: rgb(255, 247, 166);
-  font-family: sans-serif;
-  margin: 0px;
-  text-align: center;
-  max-width:100%;
-  overflow-x: hidden;
+  background-color: rgb(245, 236, 225);
+  font-family: handwritten;
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
 }
 
-#central {
-  margin: 0 auto;
-  width: 80%;
-  min-width: 80%;
-  background-color: green;
-  padding: 0px 200px 0px 200px;
-}
-
-
-#top {
-
-  font-size: 32px;
-  height: 30%;
-  max-height: 200px;
-  min-width: 400px;
-  background-color: white;
+#container {
+  width: 50%;
 }
 
 #logo {
-  float: left;
-  height: 100%;
-  width: 200px;
-  background-color: red;
+  width: 50%;
 }
 
-#footer{
-  color: white;
-  background-color: black;
-  min-height: 100px;
+.box {
+  background-color: white;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 300px;
+  margin-top: 40px;
+  padding: 20px;
+  padding-top: 0px;
 }
 
-#blog{
-  min-height: 800px;
-  background-color: salmon;
-  padding-top: 20px;
+.title {
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* text-decoration: underline; */
+  font-size: 32px;
+  font-family: handwritten;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 10px 0 10px 0;
 }
 
-.v_a {
-  display: inline-block;
-  vertical-align: middle;
-  line-height: 20px;
+.title span{
+  border-bottom: pink solid 8px;
+}
+
+.content_row {
+  flex: 1 1 auto;
+  flex-direction: row;
+  display: flex;
+  text-align: justify;
+  margin-bottom: 10px;
+  }
+
+#social, #navbar {
+  background-color: rgb(244, 202, 195);
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+#navbar {
+  background-color: rgb(132, 165, 157);
+}
+
+#navbar ul a{
+  text-transform: uppercase;
+}
+
+#social ul, #navbar ul {
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  flex: 1 1 auto;
+}
+
+
+#info {
+  background-color: rgb(244, 188, 96);
+  margin-top: 40px;
+  display: flex;
+}
+
+#footer {
+  background-color: rgb(244, 202, 195);
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding:20px;
+  vertical-align: center;
+  text-align: center;
+}
+
+.website{
+  font-size: 32px;
+}
+
+.leftright {
+  flex: 1 1 300px;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.address{
+  text-align: center;
+  margin-bottom:10px;
+  font-size: 24px;
+}
+
+#successMsg{
+
+  background-color: rgb(132, 165, 157);
+  text-align: center;
+  line-height: 32px;
+
+}
+
+/* CONTACT US FORM */
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea, input[type=email] {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  font-family: monospace;
+}
+
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: rgb(244, 188, 96);
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  font-family: handwritten;
+  font-size:18px;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: rgb(132, 165, 157);
 }
