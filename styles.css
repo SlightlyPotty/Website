@@ -13,7 +13,8 @@ body {
 }
 
 #container {
-  width: 50%;
+  /* width: 50%; */
+  max-width: 600px;
 }
 
 #logo {
