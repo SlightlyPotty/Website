@@ -12,14 +12,13 @@ body {
   flex-direction: column;
 }
 
-#container {
+#container, #logo {
   /* width: 50%; */
-  max-width: 600px;
+  width: 600px;
+
 }
 
-#logo {
-  width: 50%;
-}
+
 
 .box {
   background-color: white;
