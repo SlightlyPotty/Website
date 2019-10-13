@@ -18,8 +18,6 @@ body {
 
 }
 
-
-
 .box {
   background-color: white;
   flex: 1 1 auto;
@@ -49,13 +47,14 @@ body {
   border-bottom: pink solid 8px;
 }
 
-.content_row {
+.content_row, .person_row {
   flex: 1 1 auto;
   flex-direction: row;
   display: flex;
-  text-align: justify;
+  text-align: center;
   margin-bottom: 10px;
   }
+
 
 #social, #navbar {
   background-color: rgb(244, 202, 195);
@@ -81,6 +80,22 @@ body {
   flex: 1 1 auto;
 }
 
+.text_pink  {
+  color: rgb(244, 202, 195);
+  font-weight: bold;
+}
+
+.text_orange  {
+  color: rgb(244, 188, 96);
+  font-weight: bold;
+}
+
+.text_teal {
+    color: rgb(132, 165, 157);
+    font-weight: bold;
+
+}
+
 
 #info {
   background-color: rgb(244, 188, 96);
@@ -102,9 +117,13 @@ body {
 }
 
 .leftright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   flex: 1 1 300px;
   text-align: center;
   justify-content: space-around;
+
 }
 
 .address{
