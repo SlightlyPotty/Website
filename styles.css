@@ -4,8 +4,7 @@
 }
 
 body {
-  background-color: #f1dfc9;
-  /* rgb(245, 236, 225); */
+  background-color: rgb(245, 236, 225);
   font-family: handwritten;
   align-items: center;
   display: flex;
