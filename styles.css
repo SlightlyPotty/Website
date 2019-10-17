@@ -4,7 +4,8 @@
 }
 
 body {
-  background-color: rgb(245, 236, 225);
+  background-color: #f1dfc9;
+  /* rgb(245, 236, 225); */
   font-family: handwritten;
   align-items: center;
   display: flex;
@@ -13,9 +14,16 @@ body {
 }
 
 #container, #logo {
-  /* width: 50%; */
-  width: 600px;
+  width: 95%;
+  max-width: 680px;
+}
 
+#logo {
+  margin-top: 20px;
+}
+
+#container {
+  min-width: min-content;
 }
 
 .box {
@@ -43,8 +51,12 @@ body {
   margin: 10px 0 10px 0;
 }
 
-.title span{
+.title span {
   border-bottom: pink solid 8px;
+}
+
+.person_row .leftright img {
+  max-width: 80%;
 }
 
 .content_row, .person_row {
@@ -53,8 +65,7 @@ body {
   display: flex;
   text-align: center;
   margin-bottom: 10px;
-  }
-
+}
 
 #social, #navbar {
   background-color: rgb(244, 202, 195);
@@ -65,11 +76,15 @@ body {
   margin-top: 40px;
 }
 
+#social {
+  display: none;
+}
+
 #navbar {
   background-color: rgb(132, 165, 157);
 }
 
-#navbar ul a{
+#navbar ul a {
   text-transform: uppercase;
 }
 
@@ -80,22 +95,30 @@ body {
   flex: 1 1 auto;
 }
 
-.text_pink  {
-  color: rgb(244, 202, 195);
+#navbar ul a {
+  text-align: center;
+}
+
+.text_pink, .text_orange, .text_teal, .text_purple {
+  font-size: larger;
   font-weight: bold;
 }
 
-.text_orange  {
+.text_pink {
+  color: rgb(244, 202, 195);
+}
+
+.text_purple {
+  color: rgb(93, 65, 93);
+}
+
+.text_orange {
   color: rgb(244, 188, 96);
-  font-weight: bold;
 }
 
 .text_teal {
-    color: rgb(132, 165, 157);
-    font-weight: bold;
-
+  color: rgb(132, 165, 157);
 }
-
 
 #info {
   background-color: rgb(244, 188, 96);
@@ -107,12 +130,23 @@ body {
   background-color: rgb(244, 202, 195);
   margin-top: 40px;
   margin-bottom: 40px;
-  padding:20px;
+  padding: 20px;
   vertical-align: center;
   text-align: center;
 }
 
-.website{
+p {
+  /*  Internet Explorer Fix  */
+  max-width: 100%;
+}
+
+img {
+  /*  Internet Explorer Fix  */
+  max-width: 100%;
+  flex-shrink: 0;
+}
+
+.website {
   font-size: 32px;
 }
 
@@ -123,48 +157,57 @@ body {
   flex: 1 1 300px;
   text-align: center;
   justify-content: space-around;
-
+  max-width: 100%;
 }
 
-.address{
+.address {
   text-align: center;
-  margin-bottom:10px;
+  margin-bottom: 10px;
   font-size: 24px;
 }
 
-#successMsg{
-
+#successMsg {
   background-color: rgb(132, 165, 157);
   text-align: center;
   line-height: 32px;
-
+  margin-top: 10px;
 }
 
 /* CONTACT US FORM */
+
 /* Style inputs with type="text", select elements and textareas */
+
 input[type=text], select, textarea, input[type=email] {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */
-  border: 1px solid #ccc; /* Gray border */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  width: 100%;
+  /* Full width */
+  padding: 12px;
+  /* Some padding */
+  border: 1px solid #ccc;
+  /* Gray border */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  resize: vertical;
+  /* Allow the user to vertically resize the textarea (not horizontally) */
   font-family: monospace;
 }
 
-
 /* Style the submit button with a specific background color etc */
+
 input[type=submit] {
   background-color: rgb(244, 188, 96);
   padding: 12px 20px;
   border: none;
   cursor: pointer;
   font-family: handwritten;
-  font-size:18px;
+  font-size: 18px;
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
+
 input[type=submit]:hover {
   background-color: rgb(132, 165, 157);
 }
