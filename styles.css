@@ -66,7 +66,7 @@ body {
   margin-bottom: 10px;
 }
 
-#social, #navbar {
+#social, #navbar, #topMessage {
   background-color: rgb(244, 202, 195);
   flex: 1 1 auto;
   display: flex;
@@ -77,6 +77,10 @@ body {
 
 #social {
   display: none;
+}
+
+#topMessage .title span{
+  border: none;
 }
 
 #navbar {
