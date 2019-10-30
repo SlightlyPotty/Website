@@ -81,6 +81,7 @@ body {
 
 #topMessage .title span{
   border: none;
+  text-align: center;
 }
 
 #navbar {
